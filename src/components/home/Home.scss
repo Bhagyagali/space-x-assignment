@@ -1,0 +1,152 @@
+.home-cont{
+    padding-top: 24px;
+    background-color: #f2f2f2;
+    h5{
+        margin-bottom: 1.2rem;
+    }
+    //filters
+    .filter-main{
+        background-color: #FFF;
+        .filters-title{
+            font-weight: 700;
+            font-size: 15px;
+        }
+        .sub-filter{
+            .sub-filter-head{
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+                margin-left: 12%;
+                margin-right: 12%;
+                font-size: 15px;
+            }
+            .years-main{
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                .year{
+                    background-color: #c3dd9b;
+                    display: inline-block;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                .year-active{
+                    background-color: #7db805;
+                }
+            }
+            .sub-filter-elem-main{
+                margin: auto;
+                width: 134px;
+                .sub-filter-elem{
+                    background-color: #c3dd9b;
+                    display: inline-block;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                .success-active{
+                    background-color: #7db805;
+                }
+            }
+        }
+    }
+    //spacex data
+    .spacex-main{
+        margin-left:1rem;
+        .spacex-card{
+            width: 22.5%;
+            margin-bottom: 1rem;
+            display: block;
+            float: left;
+            background-color: #FFF;
+            height: 475px;
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: auto;
+                background-color: #f2f2f2;
+            }
+            .card-inner{
+                padding: 5px;
+                .mission-name{
+                    color:#555780;
+                    font-weight: 700;
+                    font-size: 15px;
+                }
+                .mission-label{
+                    color:#000;
+                    font-weight: 800;
+                    font-size: 14px;
+                }
+                .mission-data{
+                    color:#a7a8b5;
+                    font-size: 14px;
+                    margin-left:5px;
+                }
+            }
+        }
+    }
+    .no-data{
+        text-align: center;
+        font-size: 25px;
+        padding-top: 22%;
+        font-weight: 500;
+    }
+}
+// media query for Mobile View
+@media only screen and (min-width : 0px) and (max-width : 699px) {
+    .home-cont{
+        .filter-main{
+            .sub-filter{
+                .years-main{
+                    margin: auto;
+                    width: 188px;
+                }
+            }
+        }
+        .spacex-main{
+            margin-left:0;
+            margin-top: 15px;
+            .spacex-card{
+                width:100%;
+                // img{
+                //     width: 88%;
+                //     height: 88%;
+                // }
+                .card-inner{
+                    padding: 25px;
+                }
+            }
+        }
+    }
+}
+// media query for Tablet View
+@media only screen and (min-width : 700px) and (max-width : 1024px) {
+    .home-cont{
+        h5{
+            padding-top: 18px;
+            padding-bottom: 12px;
+        }
+        .filter-main{
+            .sub-filter{
+                .years-main{
+                    padding-left: 1rem!important;
+                    padding-right: 1rem!important;
+                }
+            }
+        }
+        .spacex-main{
+            margin-left:0;
+            .spacex-card{
+                width:46%;
+                margin-bottom: 1.5rem !important;
+                img{
+                    width: 81%;
+                }
+                .card-inner{
+                    padding: 25px;
+                }
+            }
+        }
+    }
+}
